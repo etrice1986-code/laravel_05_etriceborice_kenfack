@@ -1,0 +1,120 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+
+
+body {
+    background-color: #14181c !important; 
+    color: #ffffff !important;           
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6, .text-dark, .card-title {
+    color: #ffffff !important;
+}
+
+.text-muted, p.lead {
+    color: #9ab4cc !important;
+}
+
+
+.card {
+    background-color: #1c252d !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    color: #ffffff !important;
+}
+
+
+.form-control {
+    background-color: #2c3842 !important;
+    border: 1px solid #3a4b59 !important;
+    color: #ffffff !important;
+}
+.form-control:focus {
+    background-color: #34424e !important;
+    color: #ffffff !important;
+    border-color: #00b0ea !important;
+    box-shadow: 0 0 0 0.25rem rgba(0, 176, 234, 0.25) !important;
+}
+.form-control::placeholder {
+    color: #6c7a86 !important;
+}
+
+
+.btn-primary {
+    background-color: #00b0ea !important;
+    border-color: #00b0ea !important;
+    color: #ffffff !important;
+}
+.btn-primary:hover {
+    background-color: #009ad2 !important;
+    border-color: #009ad2 !important;
+}
+
+.btn-outline-primary {
+    color: #00b0ea !important;
+    border-color: #00b0ea !important;
+}
+.btn-outline-primary:hover {
+    background-color: #00b0ea !important;
+    color: #ffffff !important;
+}
+
+
+.movie-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.movie-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5) !important;
+}
+
+
+
+
+.custom-navbar {
+    background-color: rgba(28, 37, 45, 0.85) !important; 
+    backdrop-filter: blur(10px);                        
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);          
+    transition: all 0.3s ease;
+}
+
+
+.custom-navbar .nav-link {
+    color: #9ab4cc !important; 
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+
+.custom-navbar .nav-link:hover {
+    color: #00b0ea !important;
+}
+
+
+.custom-navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #00b0ea;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.custom-navbar .nav-link:hover::after {
+    width: 60%; 
+}
+
+/* Evidenziazione per il link della pagina attiva */
+.custom-navbar .nav-link.active {
+    color: #ffffff !important;
+}
+.custom-navbar .nav-link.active::after {
+    width: 60%;
+    background-color: #ffffff;
+}
