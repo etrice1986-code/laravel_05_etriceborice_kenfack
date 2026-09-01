@@ -24,7 +24,7 @@ class MovieController extends Controller
 
     public function movielist () {
 
-        // return view('movie.movies', ['movies'=> $this->$movies]);
+    
         return view('movie.movies', ['movies'=> $this->movies]);
 
 }
@@ -35,7 +35,6 @@ class MovieController extends Controller
     
      foreach($this->movies as $movie){
         if($id == $movie['id']){
-            // return view('movie.movie.detail', ['movie'=> $movie]);
             return view('movie.detail', ['movie'=> $movie]);
 
         }

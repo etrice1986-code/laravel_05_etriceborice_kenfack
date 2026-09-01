@@ -77,11 +77,4 @@
     </div>
 
 </div>
-
-<style>
-    .small-tracking {
-        font-size: 0.75rem;
-        letter-spacing: 1px;
-    }
-</style>
 @endsection

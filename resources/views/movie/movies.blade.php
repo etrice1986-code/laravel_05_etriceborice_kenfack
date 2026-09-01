@@ -56,27 +56,4 @@
     </div>
 </div>
 
-{{-- Stile CSS personalizzato (puoi lasciarlo qui in fondo o spostarlo nel tuo app.css) --}}
-<style>
-    .movie-card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .movie-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
-    }
-    .movie-poster {
-        transition: transform 0.5s ease;
-    }
-    .movie-card:hover .movie-poster {
-        transform: scale(1.05);
-    }
-    /* Tronca il testo dopo 2 righe per non sballare le altezze se il titolo è lunghissimo */
-    .text-truncate-2 {
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-    }
-</style>
 @endsection
