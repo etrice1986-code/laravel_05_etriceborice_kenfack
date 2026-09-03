@@ -1,27 +1,22 @@
-@extends('layouts.app')
-
-@section('title', 'Homepage')
-
-@section('content')
+<x-layout title="Homepage">
 
 <div class="text-center py-5">
+
+   
+    @if(session('emailSent'))
+        <div class="alert alert-success">
+            {{ session('emailSent') }}
+        </div>
+    @endif
+
     
-@if(session()->has('emailSent'))
-<div class="alert alert-success">
-    {{session('emailSent')}}
-</div>
+    @if(session('emailError'))
+        <div class="alert alert-danger">
+            {{ session('emailError') }}
+        </div>
+    @endif
 
-@endif
-
-@if(session()->has('emailError'))
-<div class="alert alert-danger">
-    {{session('emailError')}}
-</div>
-
-@endif
-
-    <h1 class="display-4 mb-4 text-primary fw-bold">Benvenuta nel MovieDB 🎬</h1>
-
+    <h1 class="display-4 mb-4">Benvenuta nel MovieDB 🎬</h1>
 
     <p class="lead mb-4">
         Esplora la nostra collezione di film, scopri dettagli, registi e generi.
@@ -33,4 +28,4 @@
 
 </div>
 
-@endsection
+</x-layout>
